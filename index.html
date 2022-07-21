@@ -34,6 +34,21 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div style="display: none">
+      <div>
+        <div>
+          <div>
+            <?php
+            function function_alert($message) {
+                echo "alert('$message');";
+            }
+            function_alert("Thanks for subscribing our newsletter!!");
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="protfolio-wrap">
       <!-- Start Header Area -->
       <header class="default-header">
@@ -74,6 +89,11 @@
           </div>
         </nav>
       </header>
+      <script>
+        function myFunction() {
+          alert("Thanks for subscribing our newsletter!!");
+        }
+      </script>
       <!-- End Header Area -->
       <!-- start banner Area -->
       <section class="banner-area relative" id="home">
@@ -422,7 +442,10 @@
                       required=""
                       type="email"
                     />
-                    <button class="click-btn btn btn-default">
+                    <button
+                      class="click-btn btn btn-default"
+                      onclick="myFunction()"
+                    >
                       <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </button>
 
